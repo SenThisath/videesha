@@ -438,7 +438,7 @@ export default function QuietEndingPage() {
                                         letterSpacing: "0.03em",
                                     }}
                                 >
-                                    videeshaaha
+                                    videeshaa
                                 </h1>
                             )}
 
