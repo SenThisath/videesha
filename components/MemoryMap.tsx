@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 interface MemoryPoint {
@@ -201,7 +202,7 @@ export default function MemoryMap({ photoSrc = "", onNext }: MemoryMapProps) {
             >
               {photoSrc ? (
                 // eslint-disable-next-line @next/next/no-img-element
-                <img src={photoSrc} alt="Us" className="h-full w-full object-cover" />
+                <Image src={photoSrc} alt="Us" className="h-full w-full object-cover" preload/>
               ) : (
                 <div className="flex h-full w-full flex-col items-center justify-center gap-3"
                   style={{ background: "linear-gradient(135deg, rgba(242,207,200,0.7), rgba(232,164,160,0.5))" }}>
