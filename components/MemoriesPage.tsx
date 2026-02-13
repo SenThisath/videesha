@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -357,11 +358,12 @@ export default function MemoriesPage({
                                 {/* Image or placeholder */}
                                 {current.src ?
                                     // eslint-disable-next-line @next/next/no-img-element
-                                    <img
+                                    <Image
                                         src={current.src}
                                         alt={current.caption}
                                         className="h-full w-full object-cover"
                                         style={{ minHeight: "320px" }}
+                                        preload
                                     />
                                 :   <div
                                         className="img-placeholder"

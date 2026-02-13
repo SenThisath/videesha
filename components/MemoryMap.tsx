@@ -201,7 +201,6 @@ export default function MemoryMap({ photoSrc = "", onNext }: MemoryMapProps) {
               }}
             >
               {photoSrc ? (
-                // eslint-disable-next-line @next/next/no-img-element
                 <Image src={photoSrc} alt="Us" className="h-full w-full object-cover" preload/>
               ) : (
                 <div className="flex h-full w-full flex-col items-center justify-center gap-3"
